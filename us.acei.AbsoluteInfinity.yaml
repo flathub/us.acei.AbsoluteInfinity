@@ -31,8 +31,8 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://gitlab.com/acei.us/games/project4/game/-/archive/v0.5.10.2/game-v0.5.10.2.zip
-        sha256: e5c4f6b5b7f64eb4fea60f88886781d45e8b52e9b6c2fd52d9e6b7a1bf4f22d6
+        url: https://gitlab.com/acei.us/games/project4/game/-/archive/v0.5.11.0/game-v0.5.11.0.zip
+        sha256: d614ebe8c34459e7c054042e4f1f41d697188053dcb0e2cdf4e909fa0f255411
       # Generated with https://raw.githubusercontent.com/flatpak/flatpak-builder-tools/master/dotnet/flatpak-dotnet-generator.py
       - ./nuget-sources.json
     build-options:
