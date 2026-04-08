@@ -31,8 +31,8 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://gitlab.com/acei.us/games/project4/game/-/archive/v0.5.11.0/game-v0.5.11.0.zip
-        sha256: d614ebe8c34459e7c054042e4f1f41d697188053dcb0e2cdf4e909fa0f255411
+        url: https://gitlab.com/acei.us/games/project4/game/-/archive/v0.5.12.0/game-v0.5.12.0.zip
+        sha256: 79ecf2d8fa3352e720858ad184c2dcb77624ef7196801b1b357761c67f4b2bd9
       # Generated with https://raw.githubusercontent.com/flatpak/flatpak-builder-tools/master/dotnet/flatpak-dotnet-generator.py
       - ./nuget-sources.json
     build-options:
@@ -48,7 +48,7 @@ modules:
     build-commands:
       # Build
       - dotnet clean
-      - dotnet publish AbsoluteInfinity/AbsoluteInfinity.csproj -c Release --no-self-contained --source ./nuget-sources -r $RID
+      - dotnet publish AbsoluteInfinity/AbsoluteInfinity.csproj -c Release -p:DefineConstants="FLATPAK" --no-self-contained --source ./nuget-sources -r $RID
       - mkdir -p ${FLATPAK_DEST}/bin
       - cp -r AbsoluteInfinity/bin/Release/net8.0/$RID/publish/* ${FLATPAK_DEST}/bin/
       # Install Other Stuff
