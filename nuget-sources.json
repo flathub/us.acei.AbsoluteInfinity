@@ -8,24 +8,10 @@
     },
     {
         "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/keralua/1.4.4/keralua.1.4.4.nupkg",
-        "sha512": "4daa09e8ed230dd1784eee210fe6324d24277027560024d69f031a8edb560a9e01085b8d069a1c9f5fa50b34001aa378184c0224caf5247418a827562ed5e123",
-        "dest": "nuget-sources",
-        "dest-filename": "keralua.1.4.4.nupkg"
-    },
-    {
-        "type": "file",
         "url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.24/microsoft.net.illink.tasks.8.0.24.nupkg",
         "sha512": "e5d8213656a1b53bafc6c2bed19107bae7e3138a7f3ab5441db1a468d2d9ecc5bc1bb02780c3d66465971ac0b7060decdb3b067618fa564cd01d9f2e4b84bac8",
         "dest": "nuget-sources",
         "dest-filename": "microsoft.net.illink.tasks.8.0.24.nupkg"
-    },
-    {
-        "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/nlua/1.7.5/nlua.1.7.5.nupkg",
-        "sha512": "ffe32b221ccee3c30b7b3fbd9cb81cbdc0397ab1b8e3d4ccd6e796c195996362499a1cb96f89bc185ace16d4e0be347eaa6619fe3ed8cdc441130246c3be8544",
-        "dest": "nuget-sources",
-        "dest-filename": "nlua.1.7.5.nupkg"
     },
     {
         "type": "file",
