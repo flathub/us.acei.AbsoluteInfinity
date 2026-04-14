@@ -48,7 +48,7 @@ modules:
     build-commands:
       # Build
       - dotnet clean
-      - dotnet publish AbsoluteInfinity/AbsoluteInfinity.csproj -c Release --no-self-contained --source ./nuget-sources -r $RID
+      - dotnet publish AbsoluteInfinity/AbsoluteInfinity.csproj -c Release -p:DefineConstants="FLATPAK" --no-self-contained --source ./nuget-sources -r $RID
       - mkdir -p ${FLATPAK_DEST}/bin
       - cp -r AbsoluteInfinity/bin/Release/net8.0/$RID/publish/* ${FLATPAK_DEST}/bin/
       # Install Other Stuff
