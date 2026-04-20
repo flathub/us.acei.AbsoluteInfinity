@@ -26,5 +26,19 @@
         "sha512": "bc7d22c8d198304d695ee9ae5ed4c9dbd01028f2b4ce11c3ee70d072d006802eed21712840301aad3edae5f67685f52d69b76f679ea23ba2384dfb27187b419e",
         "dest": "nuget-sources",
         "dest-filename": "sharpdl-sdl2-cs.1.0.13.nupkg"
+    },
+    {
+        "type": "file",
+        "url": "https://api.nuget.org/v3-flatcontainer/zlinq/1.5.6/zlinq.1.5.6.nupkg",
+        "sha512": "bea8321ca55a2b4603783568e8b1a1e733770818bf308bcdda3a27b81497fff64e3226742223b01855466df60df58c41ffec5e91f7aa0bedf0ae2f89c86c570c",
+        "dest": "nuget-sources",
+        "dest-filename": "zlinq.1.5.6.nupkg"
+    },
+    {
+        "type": "file",
+        "url": "https://api.nuget.org/v3-flatcontainer/zlinq.dropingenerator/1.5.6/zlinq.dropingenerator.1.5.6.nupkg",
+        "sha512": "a34ac817aec16542784067101be7d4abf694e9b34b7868108e4ee0c605b99b1a32df45fc30c0cc3fd268ccebb6ac921a3a064d11e26eda2bf6630718ac097288",
+        "dest": "nuget-sources",
+        "dest-filename": "zlinq.dropingenerator.1.5.6.nupkg"
     }
 ]
