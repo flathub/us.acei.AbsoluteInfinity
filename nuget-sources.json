@@ -8,10 +8,10 @@
     },
     {
         "type": "file",
-        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.24/microsoft.net.illink.tasks.8.0.24.nupkg",
-        "sha512": "e5d8213656a1b53bafc6c2bed19107bae7e3138a7f3ab5441db1a468d2d9ecc5bc1bb02780c3d66465971ac0b7060decdb3b067618fa564cd01d9f2e4b84bac8",
+        "url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.26/microsoft.net.illink.tasks.8.0.26.nupkg",
+        "sha512": "448813b119c2659487ebd0bfb977f33edcef740a2176cb52e85e61db3e4f22c1404ec4a3b185d0d0d97524b3bed4b2310e26b210eb2a67ac8acfc046540a5fe9",
         "dest": "nuget-sources",
-        "dest-filename": "microsoft.net.illink.tasks.8.0.24.nupkg"
+        "dest-filename": "microsoft.net.illink.tasks.8.0.26.nupkg"
     },
     {
         "type": "file",
