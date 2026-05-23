@@ -15,8 +15,8 @@ command: AbsoluteInfinity
 
 finish-args:
   - --device=dri
-  # TODO: Replace this with wayland and fallback-x11 once Wayland support becomes available
   - --socket=x11
+  - --socket=fallback-x11
   - --socket=pulseaudio
   - --share=ipc
   - --env=DOTNET_ROOT=/app/lib/dotnet
