@@ -15,8 +15,8 @@ command: AbsoluteInfinity
 
 finish-args:
   - --device=dri
-  - --socket=x11
   - --socket=fallback-x11
+  - --socket=wayland
   - --socket=pulseaudio
   - --share=ipc
   - --env=DOTNET_ROOT=/app/lib/dotnet
