@@ -31,7 +31,7 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://gitlab.com/acei.us/games/project4/game/-/archive/v0.7.0.0/game-v0.6.0.0.zip
+        url: https://gitlab.com/acei.us/games/project4/game/-/archive/v0.7.0.0/game-v0.7.0.0.zip
         sha256: a13ff30e13b344a55df3571b10e7c942340ef62aab0d326ee6743076e823c0d1
       # Generated with https://raw.githubusercontent.com/flatpak/flatpak-builder-tools/master/dotnet/flatpak-dotnet-generator.py
       - ./nuget-sources.json
