@@ -15,8 +15,8 @@ command: AbsoluteInfinity
 
 finish-args:
   - --device=dri
-  # TODO: Replace this with wayland and fallback-x11 once Wayland support becomes available
-  - --socket=x11
+  - --socket=fallback-x11
+  - --socket=wayland
   - --socket=pulseaudio
   - --share=ipc
   - --env=DOTNET_ROOT=/app/lib/dotnet
@@ -31,8 +31,8 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://gitlab.com/acei.us/games/project4/game/-/archive/v0.6.0.0/game-v0.6.0.0.zip
-        sha256: 1a76092df5eb379685a2984e1342ceb61bf672880cb1364497b9e649a02b45dc
+        url: https://gitlab.com/acei.us/games/project4/game/-/archive/v0.7.0.1/game-v0.7.0.1.zip
+        sha256: 5749b6a8a031e1ffd8e500bf6b4331c83b9488495c83e5900272b26c13a550ba
       # Generated with https://raw.githubusercontent.com/flatpak/flatpak-builder-tools/master/dotnet/flatpak-dotnet-generator.py
       - ./nuget-sources.json
     build-options:
