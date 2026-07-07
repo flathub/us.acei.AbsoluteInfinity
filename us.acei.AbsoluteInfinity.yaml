@@ -32,7 +32,7 @@ modules:
     sources:
       - type: archive
         url: https://gitlab.com/acei.us/games/project4/game/-/archive/v0.7.0.2/game-v0.7.0.2.zip
-        sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+        sha256: 8e71203a5593a29b5c5f98eca5819e835e0105cb5cd9560e3026999f1e062b46
       # Generated with https://raw.githubusercontent.com/flatpak/flatpak-builder-tools/master/dotnet/flatpak-dotnet-generator.py
       - ./nuget-sources.json
     build-options:
