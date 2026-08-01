@@ -17,10 +17,10 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://gitlab.com/acei.us/games/project4/game/-/releases/v0.7.0.2/downloads/AbsoluteInfinity-linux-x64.zip
-        sha256: 0000000000000000000000000000000000000000000000000000000000000000
+        url: https://project4.aceius.org/binaries/v0.8.0.0.zip
+        sha256: 9de6a6c1989fc381d06b7b45bb43e5f98dbf83f9cb1e8fe2dcd7a63603fc7d25
         dest: game
-        strip-components: 0 # TODO maybe set to one?
+        strip-components: 0
       - type: dir
         path: Package
         dest: Package

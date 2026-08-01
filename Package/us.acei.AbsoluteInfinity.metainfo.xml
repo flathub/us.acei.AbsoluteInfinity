@@ -103,100 +103,13 @@
 
     <releases>
         <release version="0.8.0.0" date="2026-07-30">
-            <url type="details">https://aceius.itch.io/project-4/devlog/1533046/v0700</url>
+            <url type="details">https://aceius.itch.io/project-4/devlog/1609969/v0800</url>
             <description>
-                <p>This update brings new content, art, quality of life improvements, and many
-                    bugfixes. It also has over 30 new items and recipies, and is an 80% performance
-                    improvement over prior versions.</p>
-                <ul>
-                    <li>Added <code>utl_goto</code> command to console</li>
-                    <li>Added more content to the main questline</li>
-                    <li>Added the ability to zoom/pan in a galaxy map</li>
-                    <li>Added recipes to reclaim metals from other items</li>
-                    <li>Added a changelog to the main menu</li>
-                    <li>Added a new play test feedback form to the main menu</li>
-                    <li>Added base speed display to hull stats</li>
-                    <li>Added a directions widget to the HUD</li>
-                    <li>Added an objective menu to the HUD</li>
-                    <li>Added spatial partitioning to the physics engine (physics is 80% faster now)</li>
-                    <li>Added fade in when docking</li>
-                    <li>Added casino operator NPC to International Starport </li>
-                    <li>Added new earth art</li>
-                    <li>Added Wayland Support</li>
-                    <li>Added junk item Tainted Scraps</li>
-                    <li>Added junk item Atomic Waste</li>
-                    <li>Added weapons item Atomic Weapons</li>
-                    <li>Added weapons item Railgun Ammunition</li>
-                    <li>Added resource item Oxygen</li>
-                    <li>Added resource item Nitrogen</li>
-                    <li>Added resource item Tin</li>
-                    <li>Added resource item Aluminium</li>
-                    <li>Added resource item Platinum</li>
-                    <li>Added resource item Gold</li>
-                    <li>Added resource item Cobalt</li>
-                    <li>Added resource item Silicon</li>
-                    <li>Added resource item Chlorine</li>
-                    <li>Added resource item Tungsten</li>
-                    <li>Added intermediate item Patch Kits</li>
-                    <li>Added intermediate item Amyl</li>
-                    <li>Added intermediate item Silica</li>
-                    <li>Added intermediate item Batteries</li>
-                    <li>Added intermediate item Reinforced Carbon/Carbon</li>
-                    <li>Added intermediate item Textiles</li>
-                    <li>Added intermediate item Steel</li>
-                    <li>Added technology item Hydrazine</li>
-                    <li>Added technology item Antimatter Fuel</li>
-                    <li>Added technology item Coolant</li>
-                    <li>Added technology item Hypergol</li>
-                    <li>Added technology item Surface Insulation Tile</li>
-                    <li>Added technology item Lightweight Spaceframe</li>
-                    <li>Added technology item Escape Pod</li>
-                    <li>Added technology item Advanced Electronics</li>
-                    <li>Added technology item General Purpose Computer</li>
-                    <li>Added agricultural item Fertilizer</li>
-                    <li>Added medical item Antidepressents</li>
-                    <li>Added unique sounds for toggling controls on or off</li>
-                    <li>Replaced the main menu ships with a disabled ant</li>
-                    <li>Replaced art for the FI-1</li>
-                    <li>Replaced art for the Falcon</li>
-                    <li>Replaced art for the VLV Catalyst</li>
-                    <li>Replaced &quot;insufficient jump range&quot; message with &quot;need at
-                        least X range&quot;</li>
-                    <li>The galaxy map now also shows the cheapest possible route in this scenario</li>
-                    <li>Hid items that can&#39;t be crafted from the fabrication menu</li>
-                    <li>Changed the &quot;Exit&quot; button on a pause menu to say &quot;Main
-                        Menu&quot;</li>
-                    <li>Moved the navbox to the top right</li>
-                    <li>Moved the info panel to the top center</li>
-                    <li>Changed the tree starmap to show star sprite</li>
-                    <li>Reduced torpedo mass</li>
-                    <li>Automatically target final boss on warp-in</li>
-                    <li>Crash reports are now logged to %APPDATA%/aceius/project4/crashreport.txt</li>
-                    <li>Show the exterior view of the station when docked</li>
-                    <li>Moved sensor overlay to minimap</li>
-                    <li>Fixed completed missions causing hint popups</li>
-                    <li>Fixed the crash reporter not logging/reporting crashes</li>
-                    <li>Fixed ship not angling towards the next star system correctly</li>
-                    <li>Fixed the settings menu accepting negative numbers</li>
-                    <li>Fixed the player being able to target their own ship</li>
-                    <li>Fixed repeating fade-in/fade-out effects</li>
-                    <li>Removed unused files from the asset folder</li>
-                </ul>
                 <p>
-                    <em>Flatpak</em>
+                    Eight-Zero fully overhauls combat, fleshes out piracy, and a new opening
+                    questline to Absolute Infinity. The editor has been fully reworked, and the
+                    engine has been upgraded to be even more extensible than before.
                 </p>
-                <ul>
-                    <li>Added Wayland Support</li>
-                </ul>
-                <p>
-                    <em>Editor</em>
-                </p>
-                <ul>
-                    <li>Added validation tool</li>
-                    <li>Added random number generator </li>
-                    <li>Added a spreadsheet view for items</li>
-                    <li>Improved dirty indicators</li>
-                </ul>
             </description>
         </release>
         <release version="0.7.0.0" date="2026-05-25">
