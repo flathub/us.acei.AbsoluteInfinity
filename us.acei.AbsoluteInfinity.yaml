@@ -21,8 +21,17 @@ modules:
         sha256: 6087f978359765171ebeb0714baa88e5af9fce209c326176f768daf1a5c60bde
         dest: game
         strip-components: 0
-      - type: dir
-        path: Package
+      - type: file
+        path: Package/us.acei.AbsoluteInfinity.metainfo.xml
+        dest: Package
+      - type: file
+        path: Package/icon-256.png
+        dest: Package
+      - type: file
+        path: Package/icon-128.png
+        dest: Package
+      - type: file
+        path: Package/flatpak.desktop
         dest: Package
     build-commands:
       - mkdir -p ${FLATPAK_DEST}/bin
