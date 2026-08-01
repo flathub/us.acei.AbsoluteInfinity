@@ -1,15 +1,7 @@
-# Tweaked from https://docs.flatpak.org/en/latest/dotnet.html
-
 id: us.acei.AbsoluteInfinity
 runtime: org.freedesktop.Platform
 runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
-sdk-extensions:
-  - org.freedesktop.Sdk.Extension.dotnet8
-build-options:
-  prepend-path: "/usr/lib/sdk/dotnet8/bin"
-  append-ld-library-path: "/usr/lib/sdk/dotnet8/lib"
-  prepend-pkg-config-path: "/usr/lib/sdk/dotnet8/lib/pkgconfig"
 
 command: AbsoluteInfinity
 
@@ -19,43 +11,33 @@ finish-args:
   - --socket=wayland
   - --socket=pulseaudio
   - --share=ipc
-  - --env=DOTNET_ROOT=/app/lib/dotnet
 
 modules:
-  - name: dotnet
-    buildsystem: simple
-    build-commands:
-    - /usr/lib/sdk/dotnet8/bin/install.sh
-
   - name: AbsoluteInfinity
     buildsystem: simple
     sources:
       - type: archive
-        url: https://gitlab.com/acei.us/games/project4/game/-/archive/v0.7.0.2/game-v0.7.0.2.zip
-        sha256: 8e71203a5593a29b5c5f98eca5819e835e0105cb5cd9560e3026999f1e062b46
-      # Generated with https://raw.githubusercontent.com/flatpak/flatpak-builder-tools/master/dotnet/flatpak-dotnet-generator.py
-      - ./nuget-sources.json
-    build-options:
-      arch:
-        aarch64:
-          env:
-            RID: "linux-arm64"
-        x86_64:
-          env:
-            RID: "linux-x64"
-      env:
-        DOTNET_CLI_TELEMETRY_OPTOUT: "1"
+        url: https://project4.aceius.org/binaries/flatpak-linux-x64-0.8.0.zip
+        sha256: 6087f978359765171ebeb0714baa88e5af9fce209c326176f768daf1a5c60bde
+        dest: game
+        strip-components: 0
+      - type: file
+        path: Package/us.acei.AbsoluteInfinity.metainfo.xml
+        dest: Package
+      - type: file
+        path: Package/icon-256.png
+        dest: Package
+      - type: file
+        path: Package/icon-128.png
+        dest: Package
+      - type: file
+        path: Package/flatpak.desktop
+        dest: Package
     build-commands:
-      # Build
-      - dotnet clean
-      - dotnet publish AbsoluteInfinity/AbsoluteInfinity.csproj -c Release -p:DefineConstants="FLATPAK" -p:IncludeNativeLibrariesForSelfExtract=false --no-self-contained --source ./nuget-sources -r $RID
       - mkdir -p ${FLATPAK_DEST}/bin
-      - cp -r AbsoluteInfinity/bin/Release/net8.0/$RID/publish/* ${FLATPAK_DEST}/bin/
-      # Install Other Stuff
+      - cp -r game/. ${FLATPAK_DEST}/bin/
+      - chmod +x ${FLATPAK_DEST}/bin/AbsoluteInfinity
       - install -Dm644 Package/us.acei.AbsoluteInfinity.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
       - install -Dm644 Package/icon-256.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/us.acei.AbsoluteInfinity.png
       - install -Dm644 Package/icon-128.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/us.acei.AbsoluteInfinity.png
       - install -Dm644 Package/flatpak.desktop ${FLATPAK_DEST}/share/applications/us.acei.AbsoluteInfinity.desktop
-    cleanup:
-      - /bin/*.pdb
-      - /bin/*.xml

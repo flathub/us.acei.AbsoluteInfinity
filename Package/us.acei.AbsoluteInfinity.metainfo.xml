@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+    <id>us.acei.AbsoluteInfinity</id>
+
+    <name>Absolute Infinity</name>
+    <summary>Explore, trade, and fight in a 2D galaxy.</summary>
+
+    <developer id="us.acei">
+        <name>Acei.us</name>
+    </developer>
+
+    <url type="homepage">https://acei.us/project-4</url>
+    <url type="bugtracker">https://gitlab.com/acei.us/games/project4/game/-/work_items</url>
+    <url type="contact">https://discord.gg/UnKnsYmz2K</url>
+
+    <metadata_license>CC-BY-SA-4.0</metadata_license>
+    <project_license>LicenseRef-proprietary=https://acei.us/project-4/eula/</project_license>
+
+    <description>
+        <p>
+            <em>Fly your own ships</em>
+        </p>
+
+        <p>
+            Pilot a range of vessels, starting in a scrappy shuttle and work your way up to powerful
+            capital ships. Purchase or craft upgrades for your ships, and outfit them to suit your
+            style of play.
+        </p>
+
+        <p>
+            <em>Craft and trade</em>
+        </p>
+
+        <p>
+            Systems have markets that shift with supply, demand, and what you do to them. Haul goods
+            from star to star and turn a profit by buying low and selling high. Or, mine and source
+            ingredients yourself to craft over 50 unique items and sell them for a bigger profit.
+        </p>
+
+        <p>
+            <em>Ship-to-ship combat</em>
+        </p>
+
+        <p>
+            Hunt pirates, defend your cargo, and fight through anyone between you and the truth.
+            Every projectile is simulated, and each hit carries weight. Slug it out in close
+            quarters combat, or build a missile boat and blow your enemies out of the sky from a
+            distance. The choice is yours.
+        </p>
+
+        <p>
+            <em>Mod Support </em>
+        </p>
+
+        <p>
+            Absolute Infinity's custom engine was built from the ground up with extensibility in
+            mind, and comes with the same tools used to create it. You can extend the game by adding
+            new ships, quests, items, and more.
+        </p>
+    </description>
+
+    <content_rating type="oars-1.1">
+        <content_attribute id="violence-cartoon">moderate</content_attribute>
+        <content_attribute id="violence-fantasy">moderate</content_attribute>
+        <content_attribute id="drugs-narcotics">mild</content_attribute>
+    </content_rating>
+
+    <branding>
+        <color type="primary" scheme_preference="light">#1d1e35</color>
+        <color type="primary" scheme_preference="dark">#023465</color>
+    </branding>
+
+    <launchable type="desktop-id">us.acei.AbsoluteInfinity.desktop</launchable>
+    <screenshots>
+        <screenshot type="default">
+            <image>https://files.catbox.moe/t0o815.png</image>
+            <caption>Flying in space near a space station</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://files.catbox.moe/6urhq8.png</image>
+            <caption>A view of the solar system map</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://files.catbox.moe/huhbj0.png</image>
+            <caption>Docked in a space station</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://files.catbox.moe/qa7p9r.png</image>
+            <caption>Combat near a star</caption>
+        </screenshot>
+    </screenshots>
+
+    <icon type="stock">us.acei.AbsoluteInfinity</icon>
+
+    <categories>
+        <category>Game</category>
+        <category>Simulation</category>
+    </categories>
+
+    <provides>
+        <binary>AbsoluteInfinity</binary>
+    </provides>
+
+    <releases>
+        <release version="0.8.0.0" date="2026-07-30">
+            <url type="details">https://aceius.itch.io/project-4/devlog/1609969/v0800</url>
+            <description>
+                <p>
+                    Eight-Zero fully overhauls combat, fleshes out piracy, and a new opening
+                    questline to Absolute Infinity. The editor has been fully reworked, and the
+                    engine has been upgraded to be even more extensible than before.
+                </p>
+            </description>
+        </release>
+        <release version="0.7.0.0" date="2026-05-25">
+            <url type="details">https://aceius.itch.io/project-4/devlog/1533046/v0700</url>
+            <description>
+                <p>This update brings new content, art, quality of life improvements, and many
+                    bugfixes. It also has over 30 new items and recipies, and is an 80% performance
+                    improvement over prior versions.</p>
+                <ul>
+                    <li>Added <code>utl_goto</code> command to console</li>
+                    <li>Added more content to the main questline</li>
+                    <li>Added the ability to zoom/pan in a galaxy map</li>
+                    <li>Added recipes to reclaim metals from other items</li>
+                    <li>Added a changelog to the main menu</li>
+                    <li>Added a new play test feedback form to the main menu</li>
+                    <li>Added base speed display to hull stats</li>
+                    <li>Added a directions widget to the HUD</li>
+                    <li>Added an objective menu to the HUD</li>
+                    <li>Added spatial partitioning to the physics engine (physics is 80% faster now)</li>
+                    <li>Added fade in when docking</li>
+                    <li>Added casino operator NPC to International Starport </li>
+                    <li>Added new earth art</li>
+                    <li>Added Wayland Support</li>
+                    <li>Added junk item Tainted Scraps</li>
+                    <li>Added junk item Atomic Waste</li>
+                    <li>Added weapons item Atomic Weapons</li>
+                    <li>Added weapons item Railgun Ammunition</li>
+                    <li>Added resource item Oxygen</li>
+                    <li>Added resource item Nitrogen</li>
+                    <li>Added resource item Tin</li>
+                    <li>Added resource item Aluminium</li>
+                    <li>Added resource item Platinum</li>
+                    <li>Added resource item Gold</li>
+                    <li>Added resource item Cobalt</li>
+                    <li>Added resource item Silicon</li>
+                    <li>Added resource item Chlorine</li>
+                    <li>Added resource item Tungsten</li>
+                    <li>Added intermediate item Patch Kits</li>
+                    <li>Added intermediate item Amyl</li>
+                    <li>Added intermediate item Silica</li>
+                    <li>Added intermediate item Batteries</li>
+                    <li>Added intermediate item Reinforced Carbon/Carbon</li>
+                    <li>Added intermediate item Textiles</li>
+                    <li>Added intermediate item Steel</li>
+                    <li>Added technology item Hydrazine</li>
+                    <li>Added technology item Antimatter Fuel</li>
+                    <li>Added technology item Coolant</li>
+                    <li>Added technology item Hypergol</li>
+                    <li>Added technology item Surface Insulation Tile</li>
+                    <li>Added technology item Lightweight Spaceframe</li>
+                    <li>Added technology item Escape Pod</li>
+                    <li>Added technology item Advanced Electronics</li>
+                    <li>Added technology item General Purpose Computer</li>
+                    <li>Added agricultural item Fertilizer</li>
+                    <li>Added medical item Antidepressents</li>
+                    <li>Added unique sounds for toggling controls on or off</li>
+                    <li>Replaced the main menu ships with a disabled ant</li>
+                    <li>Replaced art for the FI-1</li>
+                    <li>Replaced art for the Falcon</li>
+                    <li>Replaced art for the VLV Catalyst</li>
+                    <li>Replaced &quot;insufficient jump range&quot; message with &quot;need at
+                        least X range&quot;</li>
+                    <li>The galaxy map now also shows the cheapest possible route in this scenario</li>
+                    <li>Hid items that can&#39;t be crafted from the fabrication menu</li>
+                    <li>Changed the &quot;Exit&quot; button on a pause menu to say &quot;Main
+                        Menu&quot;</li>
+                    <li>Moved the navbox to the top right</li>
+                    <li>Moved the info panel to the top center</li>
+                    <li>Changed the tree starmap to show star sprite</li>
+                    <li>Reduced torpedo mass</li>
+                    <li>Automatically target final boss on warp-in</li>
+                    <li>Crash reports are now logged to %APPDATA%/aceius/project4/crashreport.txt</li>
+                    <li>Show the exterior view of the station when docked</li>
+                    <li>Moved sensor overlay to minimap</li>
+                    <li>Fixed completed missions causing hint popups</li>
+                    <li>Fixed the crash reporter not logging/reporting crashes</li>
+                    <li>Fixed ship not angling towards the next star system correctly</li>
+                    <li>Fixed the settings menu accepting negative numbers</li>
+                    <li>Fixed the player being able to target their own ship</li>
+                    <li>Fixed repeating fade-in/fade-out effects</li>
+                    <li>Removed unused files from the asset folder</li>
+                </ul>
+                <p>
+                    <em>Flatpak</em>
+                </p>
+                <ul>
+                    <li>Added Wayland Support</li>
+                </ul>
+                <p>
+                    <em>Editor</em>
+                </p>
+                <ul>
+                    <li>Added validation tool</li>
+                    <li>Added random number generator </li>
+                    <li>Added a spreadsheet view for items</li>
+                    <li>Improved dirty indicators</li>
+                </ul>
+            </description>
+        </release>
+        <release version="0.6.0.0" date="2026-04-19">
+            <url type="details">https://aceius.itch.io/project-4/devlog/1494087/v0600</url>
+            <description>
+                <ul>
+                    <li>Add &quot;Integrity&quot; as a possible name for NPC ships</li>
+                    <li>Add proceedural mission system</li>
+                    <li>Add &quot;Jobs&quot; page to space stations</li>
+                    <li>Add delivery missions</li>
+                    <li>Add mining missions</li>
+                    <li>Add new codex entries</li>
+                    <li>Added tutorials for new mission types</li>
+                    <li>Added new lore entries &amp; revised old ones</li>
+                    <li>Add new splash screen</li>
+                    <li>Add new win screen</li>
+                    <li>Add flash on top-right hint</li>
+                    <li>Fix bug with inventory panel not updating</li>
+                    <li>Fix bug where $0 transactions appear in wallet</li>
+                    <li>Fix console getting clogged with messages even after <code>clear</code> was
+                        run</li>
+                    <li>Fix mouse cursor not changing when buttons are hovered (only took me a year
+                        to notice)</li>
+                    <li>Fix fading-out effect blocking pause screen if opened</li>
+                    <li>Fix quest names bleeding out journal</li>
+                    <li>Fix messages from NPC&#39;s ships appearing in player message queue</li>
+                    <li>Optimizations</li>
+                    <li>And other small improvements :)</li>
+                </ul>
+            </description>
+        </release>
+        <release version="0.5.12.0" date="2026-04-07">
+            <url type="details">https://aceius.itch.io/project-4/devlog/1483732/v05120</url>
+            <description>
+                <ul>
+                    <li>Added camera shake effects</li>
+                    <li>Update main menu</li>
+                    <li>Update app metadata</li>
+                    <li>Show build IDs in game</li>
+                </ul>
+            </description>
+        </release>
+        <release version="0.5.11.0" date="2026-04-04">
+            <url type="details">https://aceius.itch.io/project-4/devlog/1483620/v05110</url>
+            <description>
+                <ul>
+                    <li>Updated Flathub metadata</li>
+                    <li>Updated &amp; optimize explosion effects</li>
+                </ul>
+            </description>
+        </release>
+        <release version="0.5.10.1" date="2026-04-02">
+            <url type="details">https://aceius.itch.io/project-4/devlog</url>
+            <description>
+                <p>Publish on Flathub!</p>
+            </description>
+        </release>
+        <release version="0.5.10.0" date="2026-03-29">
+            <url type="details">
+                https://aceius.itch.io/project-4/devlog/1480562/v05100-flatpak-launch</url>
+            <description>
+                <p>Move tutorial hints to top right</p>
+            </description>
+        </release>
+        <release version="0.5.9.5" date="2026-03-15">
+            <url type="details">https://aceius.itch.io/project-4/devlog</url>
+            <description>
+                <p>Fix bugs &amp; update app icon</p>
+            </description>
+        </release>
+    </releases>
+</component>
