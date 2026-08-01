@@ -17,8 +17,8 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://project4.aceius.org/binaries/v0.8.0.0.zip
-        sha256: 9de6a6c1989fc381d06b7b45bb43e5f98dbf83f9cb1e8fe2dcd7a63603fc7d25
+        url: https://project4.aceius.org/binaries/flatpak-linux-x64-0.8.0.zip
+        sha256: 6087f978359765171ebeb0714baa88e5af9fce209c326176f768daf1a5c60bde
         dest: game
         strip-components: 0
       - type: dir
