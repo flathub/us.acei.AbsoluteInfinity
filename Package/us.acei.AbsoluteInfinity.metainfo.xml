@@ -66,20 +66,20 @@
     <launchable type="desktop-id">us.acei.AbsoluteInfinity.desktop</launchable>
     <screenshots>
         <screenshot type="default">
-            <image>https://files.catbox.moe/t0o815.png</image>
-            <caption>Flying in space near a space station</caption>
-        </screenshot>
-        <screenshot>
-            <image>https://files.catbox.moe/6urhq8.png</image>
-            <caption>A view of the solar system map</caption>
-        </screenshot>
-        <screenshot>
-            <image>https://files.catbox.moe/huhbj0.png</image>
+            <image>https://acei.us/wp-content/uploads/2026/10/2026-09-20_15-16-12-1024x576.png</image>
             <caption>Docked in a space station</caption>
         </screenshot>
         <screenshot>
-            <image>https://files.catbox.moe/qa7p9r.png</image>
-            <caption>Combat near a star</caption>
+            <image>https://acei.us/wp-content/uploads/2026/10/2026-10-26-burning-after-a-cargo-contianer.png</image>
+            <caption>Chasing a stray cargo container</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://acei.us/wp-content/uploads/2026/10/AbsoluteInfinityMap.png</image>
+            <caption>A view of the solar system map</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://acei.us/wp-content/uploads/2026/10/2026-09-19_14-51-54.png</image>
+            <caption>A deep space encounter</caption>
         </screenshot>
     </screenshots>
 
