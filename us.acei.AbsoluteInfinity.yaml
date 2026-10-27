@@ -17,8 +17,8 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://project4.aceius.org/binaries/flatpak-linux-x64-0.8.1.zip
-        sha256: 4f27612da398bdadd98883238e9d95d2f73f26a19fa14e9d0a12bc048c269626
+        url: https://project4.aceius.org/binaries/flatpak-linux-x64-0.8.3.zip
+        sha256: 24dc1dc9a041bea03ada879735aaed856b624df7e38084b078ea8493b79470e2
         dest: game
         strip-components: 0
       - type: file
@@ -31,6 +31,12 @@ modules:
         path: Package/icon-128.png
         dest: Package
       - type: file
+        path: Package/icon-64.png
+        dest: Package
+      - type: file
+        path: Package/icon-32.png
+        dest: Package
+      - type: file
         path: Package/flatpak.desktop
         dest: Package
     build-commands:
@@ -40,4 +46,6 @@ modules:
       - install -Dm644 Package/us.acei.AbsoluteInfinity.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
       - install -Dm644 Package/icon-256.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/us.acei.AbsoluteInfinity.png
       - install -Dm644 Package/icon-128.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/us.acei.AbsoluteInfinity.png
+      - install -Dm644 Package/icon-64.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/us.acei.AbsoluteInfinity.png
+      - install -Dm644 Package/icon-32.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/us.acei.AbsoluteInfinity.png
       - install -Dm644 Package/flatpak.desktop ${FLATPAK_DEST}/share/applications/us.acei.AbsoluteInfinity.desktop
