@@ -31,6 +31,12 @@ modules:
         path: Package/icon-128.png
         dest: Package
       - type: file
+        path: Package/icon-64.png
+        dest: Package
+      - type: file
+        path: Package/icon-32.png
+        dest: Package
+      - type: file
         path: Package/flatpak.desktop
         dest: Package
     build-commands:
