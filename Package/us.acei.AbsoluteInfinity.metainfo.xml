@@ -59,8 +59,8 @@
     </content_rating>
 
     <branding>
-        <color type="primary" scheme_preference="light">#1d1e35</color>
-        <color type="primary" scheme_preference="dark">#023465</color>
+        <color type="primary" scheme_preference="light">#1d2180</color>
+        <color type="primary" scheme_preference="dark">#1d2180</color>
     </branding>
 
     <launchable type="desktop-id">us.acei.AbsoluteInfinity.desktop</launchable>
@@ -102,4 +102,10 @@
             </description>
         </release>
     </releases>
+
+    <requires>
+        <control>keyboard</control>
+        <control>pointing</control>
+        <display_length compare="ge">1280</display_length>
+    </requires>
 </component>
